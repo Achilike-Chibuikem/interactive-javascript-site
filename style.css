@@ -1,0 +1,114 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 15px;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* Counters */
+.counters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.counter {
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  font-weight: bold;
+}
+
+.green  { color: green; }
+.orange { color: darkorange; }
+.red    { color: red; }
+
+/* Search and filters */
+.filters {
+  margin: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+input, select, button {
+  padding: 8px;
+  font-size: 14px;
+}
+
+/* Equipment cards */
+#equipmentList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.card {
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 12px;
+  width: 220px;
+  cursor: pointer;
+}
+
+.card:hover {
+  background-color: #e8f0ff;
+}
+
+.status-working     { color: green; }
+.status-maintenance { color: darkorange; }
+.status-faulty      { color: red; }
+
+/* Add form */
+.form-box {
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 15px;
+  max-width: 350px;
+}
+
+.form-box input,
+.form-box select {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+#errorMessage {
+  color: red;
+}
+
+/* Popup */
+#modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-box {
+  background-color: white;
+  width: 300px;
+  max-width: 90%;
+  margin: 80px auto;
+  padding: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Small screens (phones) */
+@media (max-width: 600px) {
+  .card {
+    width: 100%;
+  }
+}
